@@ -364,6 +364,10 @@
             "type": "string",
             "nullable": true
           },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
           "roleId": {
             "type": "integer",
             "format": "int32"

@@ -17,55 +17,46 @@ public class UsersController : ControllerBase
     private const string UserDetailsKey = "user_details";
     private readonly IDistributedCache _distributedCache;
     private readonly ILogger<UsersController> _logger;
-      
+
     public UsersController(ApplicationDbContext context, IDistributedCache cache, IDistributedCache distributedCache, ILogger<UsersController> logger)
     {
         _context = context;
         _cache = cache;
-        _distributedCache = distributedCache; 
+        _distributedCache = distributedCache;
         _logger = logger;
     }
 
     [HttpGet("GetUserList")]
     public async Task<IActionResult> GetUserList(string? username = null)
     {
-        //Đoạn code này thực hiện một yêu cầu HTTP GET để lấy thông tin chi tiết người dùng từ cơ sở dữ liệu,
-        //đồng thời sử dụng Redis để lưu trữ kết quả và giảm tải cho hệ thống trong các lần truy vấn tiếp theo.
-        //Nếu có dữ liệu đã được lưu trong Redis, sẽ trả về kết quả trực tiếp từ cache, giúp tăng tốc độ phản hồi.
+        //GET thông tin từ database, nếu đã lưu trong Redis, trả về kết quả trực tiếp từ cache
         try
         {
-            //Tạo một khóa cache duy nhất, dựa trên UserDetailsKey và city. Nếu không có thành phố (city = null), khóa sẽ là "all".
+            //Tạo một khóa cache duy nhất, dựa trên UserDetailsKey và username. Nếu (username = null), khóa sẽ là "all".
             string cacheKey = $"{UserDetailsKey}_{username ?? "all"}";
 
             // Kiểm tra xem dữ liệu đã được lưu trữ trong Redis chưa bằng cách sử dụng khóa cacheKey. 
             var cachedData = await _distributedCache.GetStringAsync(cacheKey);
-            //Nếu dữ liệu có trong cache (không phải null hay chuỗi rỗng), thì tiếp tục giải mã dữ liệu từ JSON và trả về dưới dạng đối tượng List<UserAddressView>.
+
+            //Nếu dữ liệu có trong cache, trả về dưới dạng đối tượng List<UserAddressView>.
             if (!string.IsNullOrEmpty(cachedData))
             {
-                // Giải mã dữ liệu JSON từ Redis thành một danh sách các đối tượng UserAddressView
                 var cachedUserDetails = JsonSerializer.Deserialize<List<UserAddressView>>(cachedData);
-                //Trả về kết quả từ Redis dưới dạng HTTP response với mã trạng thái 200 OK.
                 return Ok(cachedUserDetails);
             }
 
             // Truy vấn từ cơ sở dữ liệu nếu không có trong Redis
 
-            //Bắt đầu một truy vấn LINQ trên bảng Users trong cơ sở dữ liệu, kết hợp dữ liệu từ bảng Role và Addresses của mỗi người dùng.
-            //Đây là kiểu truy vấn "Eager Loading", tức là truy vấn luôn kèm theo dữ liệu liên quan từ các bảng khác.
             var query = _context.Users
                 .Include(u => u.Role)
                 .Include(u => u.Addresses)
                 .AsQueryable();
 
-            //Nếu có tham số city (không phải null hay chuỗi rỗng), sẽ thêm điều kiện lọc vào truy vấn, chỉ lấy những người dùng thỏa đk
+            //Nếu có tham số username (không phải null hay chuỗi rỗng), sẽ thêm điều kiện lọc vào truy vấn, chỉ lấy những người dùng thỏa đk
             if (!string.IsNullOrEmpty(username))
             {
-
-                //Lọc các người dùng có ít nhất một địa chỉ có thành phố tương ứng với city
                 query = query.Where(u => u.Name == username);
             }
-            //Thực hiện truy vấn và chuyển đổi kết quả thành một danh sách các đối tượng UserAddressView, bao gồm tên, email, vai trò của người dùng, và các địa chỉ của họ.
-            //Dữ liệu này sẽ được trả về dưới dạng danh sách các đối tượng.
             var listUser = await query
      .Where(u => u.IsActive) // Lọc chỉ những người dùng có isActive = 1
      .Select(u => new UserAddressView
@@ -82,9 +73,6 @@ public class UsersController : ControllerBase
      })
      .ToListAsync();
 
-            //Select(u => new UserAddressView {...}): Dựng một đối tượng mới UserAddressView với các thông tin người dùng và địa chỉ.
-            //ToListAsync(): Chuyển đổi kết quả truy vấn thành một danh sách các đối tượng bất đồng bộ(async).
-
             // Lưu dữ liệu vào Redis với thời gian hết hạn
 
             //Dữ liệu trả về từ cơ sở dữ liệu (userDetails) sẽ được chuyển đổi thành chuỗi JSON để lưu vào Redis.
@@ -98,11 +86,8 @@ public class UsersController : ControllerBase
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(5)
 
                 });
-            //Lưu dữ liệu vào Redis với khóa cacheKey và thiết lập thời gian hết hạn của cache là 5 phút.
+            //Lưu dữ liệu vào Redis với khóa cacheKey và thiết lập thời gian hết hạn của cache là 5s.
 
-
-            // Trả về dữ liệu từ cơ sở dữ liệu
-            //Nếu dữ liệu không có trong cache, sau khi lấy từ cơ sở dữ liệu và lưu vào Redis, dữ liệu sẽ được trả về cho client dưới dạng response HTTP với mã trạng thái 200 OK.
             return Ok(listUser);
         }
         catch (Exception ex)
@@ -244,7 +229,7 @@ public class UsersController : ControllerBase
      [FromQuery] string? searchTerm)
     {
         try
-        { 
+        {
             // Chuẩn hóa searchTerm (cắt khoảng trắng và chuyển thành chữ thường)
             searchTerm = searchTerm.Trim().ToLower();
 
@@ -389,6 +374,7 @@ public class UsersController : ControllerBase
             // Cập nhật thông tin người dùng
             user.Name = request.Name;
             user.RoleId = request.RoleId;
+            user.Email = request.Email;
             user.UpdatedAt = DateTime.Now;
 
             await _context.SaveChangesAsync();
@@ -628,8 +614,8 @@ public class UsersController : ControllerBase
         {
             return StatusCode(500, new { message = ex.Message });
         }
-    } 
-        // Override phương thức InvalidateCache để xóa tất cả các cache keys
+    }
+    // Override phương thức InvalidateCache để xóa tất cả các cache keys
     private async Task InvalidateCache()
     {
         await _cache.RemoveAsync(CacheKey);
