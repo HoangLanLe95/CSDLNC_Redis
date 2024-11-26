@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\",
+  "WorkspaceRootPath": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication\\redisapplication\\redisapplication\\views\\usermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication(2)\\redisapplication\\redisapplication\\views\\usermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|solutionrelative:redisapplication\\views\\usermanagement\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication\\redisapplication\\redisapplication\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication(2)\\redisapplication\\redisapplication\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|solutionrelative:redisapplication\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication\\redisapplication\\redisapplication\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication(2)\\redisapplication\\redisapplication\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|solutionrelative:redisapplication\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication(2)\\redisapplication\\redisapplication\\useraddressview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|solutionrelative:redisapplication\\useraddressview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication(2)\\redisapplication\\redisapplication\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|solutionrelative:redisapplication\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\csdl_huongdoituong\\redisapplication(2)\\redisapplication\\redisapplication\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|solutionrelative:redisapplication\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +34,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserManagementController.cs",
+              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\UserManagementController.cs",
+              "RelativeDocumentMoniker": "RedisApplication\\UserManagementController.cs",
+              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\UserManagementController.cs",
+              "RelativeToolTip": "RedisApplication\\UserManagementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:34:05.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Address.cs",
+              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\Address.cs",
+              "RelativeDocumentMoniker": "RedisApplication\\Address.cs",
+              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\Address.cs",
+              "RelativeToolTip": "RedisApplication\\Address.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T09:00:14.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserAddressView.cs",
+              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\UserAddressView.cs",
+              "RelativeDocumentMoniker": "RedisApplication\\UserAddressView.cs",
+              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\UserAddressView.cs",
+              "RelativeToolTip": "RedisApplication\\UserAddressView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T04:00:09.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "User.cs",
-              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\User.cs",
+              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\User.cs",
               "RelativeDocumentMoniker": "RedisApplication\\User.cs",
-              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\User.cs",
+              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\User.cs",
               "RelativeToolTip": "RedisApplication\\User.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA7wB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-24T13:53:59.399Z",
               "EditorCaption": ""
@@ -41,11 +92,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\Views\\UserManagement\\Index.cshtml",
+              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\Views\\UserManagement\\Index.cshtml",
               "RelativeDocumentMoniker": "RedisApplication\\Views\\UserManagement\\Index.cshtml",
-              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\Views\\UserManagement\\Index.cshtml",
+              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\Views\\UserManagement\\Index.cshtml",
               "RelativeToolTip": "RedisApplication\\Views\\UserManagement\\Index.cshtml",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAiwLAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-24T13:28:14.851Z",
               "EditorCaption": ""
@@ -54,11 +105,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\UsersController.cs",
+              "DocumentMoniker": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\UsersController.cs",
               "RelativeDocumentMoniker": "RedisApplication\\UsersController.cs",
-              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\UsersController.cs",
+              "ToolTip": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\UsersController.cs",
               "RelativeToolTip": "RedisApplication\\UsersController.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAmwN4AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAQwPMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-20T04:19:28.463Z",
               "EditorCaption": ""

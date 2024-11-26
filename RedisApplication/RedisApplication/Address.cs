@@ -7,6 +7,7 @@ namespace RedisApplication
         public string Street { get; set; }
         public string City { get; set; }
         public string District { get; set; }
+        public Boolean IsActive { get; set; }
         public string PostalCode { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }

@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/users-management": {
+    "/usersmanagement": {
       "get": {
         "tags": [
           "UserManagement"
@@ -17,14 +17,14 @@
         }
       }
     },
-    "/api/Users/GetUserDetails": {
+    "/api/Users/GetUserList": {
       "get": {
         "tags": [
           "Users"
         ],
         "parameters": [
           {
-            "name": "city",
+            "name": "username",
             "in": "query",
             "schema": {
               "type": "string"
@@ -104,20 +104,6 @@
             "schema": {
               "type": "string"
             }
-          },
-          {
-            "name": "city",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "roleName",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
           }
         ],
         "responses": {
@@ -127,7 +113,7 @@
         }
       }
     },
-    "/api/Users/GetAvailableRoles": {
+    "/api/Users/GetRoles": {
       "get": {
         "tags": [
           "Users"
@@ -174,6 +160,29 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Users/{userId}/Deactivate": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -263,8 +272,10 @@
             "description": "OK"
           }
         }
-      },
-      "delete": {
+      }
+    },
+    "/api/Users/address/{addressId}/Deactivate": {
+      "put": {
         "tags": [
           "Users"
         ],
@@ -290,19 +301,30 @@
   "components": {
     "schemas": {
       "AddUserRequest": {
+        "required": [
+          "email",
+          "name",
+          "roleId"
+        ],
         "type": "object",
         "properties": {
           "name": {
-            "type": "string",
-            "nullable": true
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
           },
           "email": {
+            "minLength": 1,
             "type": "string",
-            "nullable": true
+            "format": "email"
           },
           "roleId": {
             "type": "integer",
             "format": "int32"
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -327,6 +349,9 @@
             "nullable": true
           },
           "isDefault": {
+            "type": "boolean"
+          },
+          "isActive": {
             "type": "boolean"
           }
         },

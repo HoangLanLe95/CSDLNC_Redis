@@ -5293,11 +5293,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\RedisApplication.csproj",
+      "projectUniqueName": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\RedisApplication.csproj",
       "projectName": "RedisApplication",
-      "projectPath": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\RedisApplication.csproj",
+      "projectPath": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\RedisApplication.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "H:\\CSDL_HuongDoiTuong\\RedisApplication\\RedisApplication\\RedisApplication\\obj\\",
+      "outputPath": "H:\\CSDL_HuongDoiTuong\\RedisApplication(2)\\RedisApplication\\RedisApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

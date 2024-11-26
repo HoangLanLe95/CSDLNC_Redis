@@ -1,112 +1,4 @@
-﻿//using Microsoft.AspNetCore.Mvc;
-//using Microsoft.EntityFrameworkCore;
-//using Microsoft.Extensions.Caching.Distributed;
-//using RedisApplication;
-//using System.Text.Json;
-//[ApiController]
-//[Route("api/[controller]")]
-//public class UsersController : ControllerBase
-//{
-//    private readonly ApplicationDbContext _context;
-//    private readonly IDistributedCache _cache;
-//    private const string CacheKey = "users_list";
-
-//    public UsersController(ApplicationDbContext context, IDistributedCache cache)
-//    {
-//        _context = context;
-//        _cache = cache;
-//    }
-
-//    [HttpGet("GetUsers")]
-//    //[ProducesResponseType(typeof(List<User>), StatusCodes.Status200OK)] 
-//    public async Task<IActionResult> GetUsers()
-//    {
-//        // Thử lấy từ cache
-//        string cachedUsers = await _cache.GetStringAsync(CacheKey);
-
-//        if (!string.IsNullOrEmpty(cachedUsers))
-//        {
-//            var users = JsonSerializer.Deserialize<List<User>>(cachedUsers);
-//            return Ok(users);
-//        }
-
-//        // Nếu không có trong cache, lấy từ database
-//        var usersFromDb = await _context.Users.ToListAsync();
-
-//        // Lưu vào cache với thời gian hết hạn là 1 phút
-//        await _cache.SetStringAsync(
-//            CacheKey,
-//            JsonSerializer.Serialize(usersFromDb),
-//            new DistributedCacheEntryOptions
-//            {
-//                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
-//            });
-
-//        return Ok(usersFromDb);
-//    }
-
-//    [HttpPost("CreateUser")]
-//    public async Task<IActionResult> CreateUser([FromBody] User user)
-//    {
-//        if (user == null)
-//            return BadRequest();
-
-//        _context.Users.Add(user);
-//        await _context.SaveChangesAsync();
-
-//        // Xóa cache khi có thay đổi dữ liệu
-//        await InvalidateCache();
-
-//        return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
-//    }
-
-//    [HttpPut("{id}")]
-//    public async Task<IActionResult> UpdateUser(int id, [FromBody] User user)
-//    {
-//        if (id != user.Id)
-//            return BadRequest();
-
-//        _context.Entry(user).State = EntityState.Modified;
-//        await _context.SaveChangesAsync();
-
-//        // Xóa cache khi có thay đổi dữ liệu
-//        await InvalidateCache();
-
-//        return NoContent();
-//    }
-
-//    [HttpDelete("{id}")]
-//    public async Task<IActionResult> DeleteUser(int id)
-//    {
-//        var user = await _context.Users.FindAsync(id);
-//        if (user == null)
-//            return NotFound();
-
-//        _context.Users.Remove(user);
-//        await _context.SaveChangesAsync();
-
-//        // Xóa cache khi có thay đổi dữ liệu
-//        await InvalidateCache();
-
-//        return NoContent();
-//    }
-
-//    // Phương thức để xóa cache
-//    private async Task InvalidateCache()
-//    {
-//        await _cache.RemoveAsync(CacheKey);
-//    }
-
-//    // Thêm endpoint để xóa cache thủ công nếu cần
-//    [HttpPost("clear-cache")]
-//    public async Task<IActionResult> ClearCache()
-//    {
-//        await InvalidateCache();
-//        return Ok("Cache cleared successfully");
-//    }
-//}
-
-
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
@@ -124,18 +16,18 @@ public class UsersController : ControllerBase
     private const string CacheKey = "users_list";
     private const string UserDetailsKey = "user_details";
     private readonly IDistributedCache _distributedCache;
-
-
-
-    public UsersController(ApplicationDbContext context, IDistributedCache cache, IDistributedCache distributedCache)
+    private readonly ILogger<UsersController> _logger;
+      
+    public UsersController(ApplicationDbContext context, IDistributedCache cache, IDistributedCache distributedCache, ILogger<UsersController> logger)
     {
         _context = context;
         _cache = cache;
-        _distributedCache = distributedCache;
+        _distributedCache = distributedCache; 
+        _logger = logger;
     }
 
-    [HttpGet("GetUserDetails")]
-    public async Task<IActionResult> GetUserDetails(string? city = null)
+    [HttpGet("GetUserList")]
+    public async Task<IActionResult> GetUserList(string? username = null)
     {
         //Đoạn code này thực hiện một yêu cầu HTTP GET để lấy thông tin chi tiết người dùng từ cơ sở dữ liệu,
         //đồng thời sử dụng Redis để lưu trữ kết quả và giảm tải cho hệ thống trong các lần truy vấn tiếp theo.
@@ -143,7 +35,7 @@ public class UsersController : ControllerBase
         try
         {
             //Tạo một khóa cache duy nhất, dựa trên UserDetailsKey và city. Nếu không có thành phố (city = null), khóa sẽ là "all".
-            string cacheKey = $"{UserDetailsKey}_{city ?? "all"}";
+            string cacheKey = $"{UserDetailsKey}_{username ?? "all"}";
 
             // Kiểm tra xem dữ liệu đã được lưu trữ trong Redis chưa bằng cách sử dụng khóa cacheKey. 
             var cachedData = await _distributedCache.GetStringAsync(cacheKey);
@@ -165,45 +57,45 @@ public class UsersController : ControllerBase
                 .Include(u => u.Addresses)
                 .AsQueryable();
 
-            //Nếu có tham số city (không phải null hay chuỗi rỗng), sẽ thêm điều kiện lọc vào truy vấn, chỉ lấy những người dùng có địa chỉ thuộc thành phố đó.
-            if (!string.IsNullOrEmpty(city))
+            //Nếu có tham số city (không phải null hay chuỗi rỗng), sẽ thêm điều kiện lọc vào truy vấn, chỉ lấy những người dùng thỏa đk
+            if (!string.IsNullOrEmpty(username))
             {
 
                 //Lọc các người dùng có ít nhất một địa chỉ có thành phố tương ứng với city
-                query = query.Where(u => u.Addresses.Any(a => a.City == city));
+                query = query.Where(u => u.Name == username);
             }
             //Thực hiện truy vấn và chuyển đổi kết quả thành một danh sách các đối tượng UserAddressView, bao gồm tên, email, vai trò của người dùng, và các địa chỉ của họ.
             //Dữ liệu này sẽ được trả về dưới dạng danh sách các đối tượng.
-            var userDetails = await query
-                .Select(u => new UserAddressView
-                {
-                    Id = u.Id,
-                    UserName = u.Name,
-                    Email = u.Email,
-                    RoleName = u.Role.Name,
-                    Addresses = u.Addresses.Select(a => new AddressInfo
-                    {
-                        FullAddress = $"{a.Street}, {a.District}",
-                        City = a.City
-                    }).ToList()
-                })
-                .ToListAsync();
+            var listUser = await query
+     .Where(u => u.IsActive) // Lọc chỉ những người dùng có isActive = 1
+     .Select(u => new UserAddressView
+     {
+         Id = u.Id,
+         UserName = u.Name,
+         Email = u.Email,
+         RoleName = u.Role.Name,
+         Addresses = u.Addresses.Select(a => new AddressInfo
+         {
+             FullAddress = $"{a.Street}, {a.District}",
+             City = a.City
+         }).ToList()
+     })
+     .ToListAsync();
+
             //Select(u => new UserAddressView {...}): Dựng một đối tượng mới UserAddressView với các thông tin người dùng và địa chỉ.
             //ToListAsync(): Chuyển đổi kết quả truy vấn thành một danh sách các đối tượng bất đồng bộ(async).
-
-
 
             // Lưu dữ liệu vào Redis với thời gian hết hạn
 
             //Dữ liệu trả về từ cơ sở dữ liệu (userDetails) sẽ được chuyển đổi thành chuỗi JSON để lưu vào Redis.
-            var serializedData = JsonSerializer.Serialize(userDetails);
+            var serializedData = JsonSerializer.Serialize(listUser);
             await _distributedCache.SetStringAsync(
                 cacheKey,
                 serializedData,
                 new DistributedCacheEntryOptions
                 {
                     // AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(15)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(5)
 
                 });
             //Lưu dữ liệu vào Redis với khóa cacheKey và thiết lập thời gian hết hạn của cache là 5 phút.
@@ -211,7 +103,7 @@ public class UsersController : ControllerBase
 
             // Trả về dữ liệu từ cơ sở dữ liệu
             //Nếu dữ liệu không có trong cache, sau khi lấy từ cơ sở dữ liệu và lưu vào Redis, dữ liệu sẽ được trả về cho client dưới dạng response HTTP với mã trạng thái 200 OK.
-            return Ok(userDetails);
+            return Ok(listUser);
         }
         catch (Exception ex)
         {
@@ -225,25 +117,29 @@ public class UsersController : ControllerBase
         try
         {
             var user = await _context.Users
-                .Include(u => u.Role)
-                .Include(u => u.Addresses)
-                .Where(u => u.Id == id)
-                .Select(u => new UserDetailsViewModel
+    .Include(u => u.Role)
+    .Include(u => u.Addresses)
+    .Where(u => u.Id == id)
+    .Select(u => new UserDetailsViewModel
+    {
+        Id = u.Id,
+        UserName = u.Name,
+        Email = u.Email,
+        RoleName = u.Role != null ? u.Role.Name : null,
+        RoleId = u.Role != null ? u.Role.Id : 0,
+        Addresses = u.Addresses != null
+            ? u.Addresses
+                .Where(a => a.IsActive == true) // Thêm điều kiện IsActive = 1
+                .Select(a => new AddressInfo
                 {
-                    Id = u.Id,
-                    UserName = u.Name,
-                    Email = u.Email,
-                    RoleName = u.Role != null ? u.Role.Name : null,
-                    RoleId = u.Role != null ? u.Role.Id : 0,
-                    Addresses = u.Addresses != null
-                        ? u.Addresses.Select(a => new AddressInfo
-                        {
-                            FullAddress = $"{a.Street}, {a.District}",
-                            City = a.City
-                        }).ToList()
-                        : new List<AddressInfo>() // Trả về danh sách rỗng khi không có địa chỉ
-                })
-                .FirstOrDefaultAsync();
+                    FullAddress = $"{a.Street}, {a.District}",
+                    City = a.City,
+                    Id = a.Id
+                }).ToList()
+            : new List<AddressInfo>() // Trả về danh sách rỗng khi không có địa chỉ
+    })
+    .FirstOrDefaultAsync();
+
 
             if (user == null)
             {
@@ -259,8 +155,21 @@ public class UsersController : ControllerBase
     }
 
     [HttpPost("AddUser")]
-    public async Task<IActionResult> AddUser(AddUserRequest request)
+    public async Task<IActionResult> AddUser([FromBody] AddUserRequest request)
     {
+        // Kiểm tra validation
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(new
+            {
+                message = "Dữ liệu không hợp lệ",
+                errors = ModelState.Values
+                    .SelectMany(v => v.Errors)
+                    .Select(e => e.ErrorMessage)
+                    .ToList()
+            });
+        }
+
         try
         {
             // Kiểm tra nếu email đã tồn tại
@@ -270,8 +179,9 @@ public class UsersController : ControllerBase
                 return BadRequest(new { message = "Email đã tồn tại" });
 
             // Kiểm tra role có hợp lệ
-            var roleExists = await _context.Roles.AnyAsync(r => r.Id == request.RoleId);
-            if (!roleExists)
+            var role = await _context.Roles
+                .FirstOrDefaultAsync(r => r.Id == request.RoleId);
+            if (role == null)
                 return BadRequest(new { message = "Role không hợp lệ" });
 
             // Tạo mới người dùng
@@ -280,6 +190,10 @@ public class UsersController : ControllerBase
                 Name = request.Name,
                 Email = request.Email,
                 RoleId = request.RoleId,
+                Password = "password",
+                IsActive = true,
+
+                CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now
             };
 
@@ -300,104 +214,42 @@ public class UsersController : ControllerBase
                     newUser.Id,
                     newUser.Name,
                     newUser.Email,
-                    Role = newUser.Role.Name
+                    Role = role.Id
                 }
+            });
+        }
+        catch (DbUpdateException ex)
+        {
+            // Log chi tiết lỗi
+            _logger.LogError(ex, "Lỗi khi lưu người dùng");
+
+            // Trích xuất inner exception để có thông tin chi tiết hơn
+            var innerException = ex.InnerException?.Message ?? ex.Message;
+            return StatusCode(500, new
+            {
+                message = "Có lỗi trong quá trình lưu dữ liệu",
+                details = innerException
             });
         }
         catch (Exception ex)
         {
+            // Log lỗi chung
+            _logger.LogError(ex, "Lỗi không xác định khi thêm người dùng");
             return StatusCode(500, new { message = ex.Message });
         }
     }
 
-
-
-    //[HttpGet("GetUsersByRole/{roleName}")]
-    //public async Task<IActionResult> GetUsersByRole(string roleName)
-    //{
-    //    try
-    //    {
-    //        // Chuẩn hóa roleName
-    //        roleName = roleName.Trim().ToLower();
-
-    //        // Tạo khóa cache dựa trên roleName
-    //        string cacheKey = $"UsersByRole_{roleName}";
-
-    //        // Kiểm tra dữ liệu trong cache Redis
-    //        var cachedData = await _distributedCache.GetStringAsync(cacheKey);
-    //        if (!string.IsNullOrEmpty(cachedData))
-    //        {
-    //            // Deserialize dữ liệu từ Redis và trả về
-    //            var cachedResponse = JsonSerializer.Deserialize<object>(cachedData);
-    //            return Ok(cachedResponse);
-    //        }
-
-    //        // Truy vấn cơ sở dữ liệu nếu không có trong cache
-    //        var users = await _context.Users
-    //            .Include(u => u.Role)
-    //            .Include(u => u.Addresses)
-    //            .Where(u => u.Role.Name.ToLower() == roleName)
-    //            .Select(u => new
-    //            {
-    //                u.Id,
-    //                u.Name,
-    //                u.Email,
-    //                Role = u.Role.Name,
-    //                Addresses = u.Addresses.Select(a => new
-    //                {
-    //                    a.Street,
-    //                    a.City,
-    //                    a.District,
-    //                    FullAddress = $"{a.Street}, {a.District}, {a.City}"
-    //                }).ToList(),
-    //                AddressCount = u.Addresses.Count
-    //            })
-    //            .ToListAsync();
-
-    //        // Kiểm tra nếu không có người dùng
-    //        if (!users.Any())
-    //        {
-    //            return NotFound(new { message = $"Không tìm thấy người dùng nào với role '{roleName}'" });
-    //        }
-
-    //        // Tạo thông tin tổng hợp
-    //        var response = new
-    //        {
-    //            RoleName = roleName,
-    //            TotalUsers = users.Count,
-    //            Users = users
-    //        };
-
-    //        // Lưu kết quả vào Redis Cache
-    //        var serializedData = JsonSerializer.Serialize(response);
-    //        await _distributedCache.SetStringAsync(
-    //            cacheKey,
-    //            serializedData,
-    //            new DistributedCacheEntryOptions
-    //            {
-    //                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
-    //            });
-
-    //        return Ok(response);
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        return StatusCode(500, new { message = ex.Message });
-    //    }
-    //}
-
     [HttpGet("SearchUsers")]
     public async Task<IActionResult> SearchUsers(
-        [FromQuery] string? searchTerm,
-        [FromQuery] string? city,
-        [FromQuery] string? roleName)
+     [FromQuery] string? searchTerm)
     {
         try
-        {
-            // Tạo cache key từ các tham số
-            string cacheKey = $"SearchUsers_{searchTerm?.Trim().ToLower() ?? "null"}_" +
-                              $"{city?.Trim().ToLower() ?? "null"}_" +
-                              $"{roleName?.Trim().ToLower() ?? "null"}";
+        { 
+            // Chuẩn hóa searchTerm (cắt khoảng trắng và chuyển thành chữ thường)
+            searchTerm = searchTerm.Trim().ToLower();
+
+            // Tạo cache key từ tham số searchTerm
+            string cacheKey = $"SearchUsers_{searchTerm}";
 
             // Kiểm tra Redis cache
             var cachedData = await _distributedCache.GetStringAsync(cacheKey);
@@ -407,35 +259,19 @@ public class UsersController : ControllerBase
                 return Ok(cachedResponse);
             }
 
-            // Truy vấn cơ sở dữ liệu nếu không có trong cache
+            // Truy vấn cơ sở dữ liệu
             var query = _context.Users
                 .Include(u => u.Role)
                 .Include(u => u.Addresses)
                 .AsQueryable();
 
-            // Tìm theo searchTerm (name hoặc email)
-            if (!string.IsNullOrEmpty(searchTerm))
-            {
-                searchTerm = searchTerm.Trim().ToLower();
-                query = query.Where(u =>
-                    u.Name.ToLower().Contains(searchTerm) ||
-                    u.Email.ToLower().Contains(searchTerm));
-            }
-
-            // Tìm theo thành phố
-            if (!string.IsNullOrEmpty(city))
-            {
-                city = city.Trim().ToLower();
-                query = query.Where(u =>
-                    u.Addresses.Any(a => a.City.ToLower().Contains(city)));
-            }
-
-            // Tìm theo role name
-            if (!string.IsNullOrEmpty(roleName))
-            {
-                roleName = roleName.Trim().ToLower();
-                query = query.Where(u => u.Role.Name.ToLower() == roleName);
-            }
+            // Tìm kiếm theo searchTerm cho name, email, role, và city
+            query = query.Where(u => u.IsActive == true && // Điều kiện IsActive
+                (u.Name.ToLower().Contains(searchTerm) ||
+                 u.Email.ToLower().Contains(searchTerm) ||
+                 u.Role.Name.ToLower().Contains(searchTerm) ||
+                 u.Addresses.Any(a => a.City.ToLower().Contains(searchTerm))
+                ));
 
             var users = await query
                 .Select(u => new
@@ -464,9 +300,7 @@ public class UsersController : ControllerBase
                 TotalUsers = users.Count,
                 SearchCriteria = new
                 {
-                    SearchTerm = searchTerm,
-                    City = city,
-                    RoleName = roleName
+                    SearchTerm = searchTerm
                 },
                 Users = users,
                 Summary = new
@@ -498,7 +332,7 @@ public class UsersController : ControllerBase
                 serializedData,
                 new DistributedCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10) // Cache tồn tại trong 10 phút
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(5) // Cache tồn tại trong 5 giây
                 });
 
             return Ok(response);
@@ -510,8 +344,10 @@ public class UsersController : ControllerBase
     }
 
 
-    [HttpGet("GetAvailableRoles")]
-    public async Task<IActionResult> GetAvailableRoles()
+
+
+    [HttpGet("GetRoles")]
+    public async Task<IActionResult> GetRoles()
     {
         try
         {
@@ -531,7 +367,7 @@ public class UsersController : ControllerBase
             return StatusCode(500, new { message = ex.Message });
         }
     }
-   
+
     [HttpPut("{userId}/UpdateInfo")]
     public async Task<IActionResult> UpdateUserInfo(int userId, UpdateUserRequest request)
     {
@@ -559,11 +395,16 @@ public class UsersController : ControllerBase
 
             // Xóa cache liên quan đến người dùng và danh sách vai trò
             string userCacheKey = $"UserDetails_{userId}";
-            string roleCacheKey = $"UsersByRole_{user.Role.Id}";
 
-            // Xóa cache trong Redis
+            // Kiểm tra xem user.Role có null không trước khi truy cập
+            string roleCacheKey = user.Role != null ? $"UsersByRole_{user.Role.Id}" : null;
+
+            // Xóa cache trong Redis nếu roleCacheKey không phải là null
             await _distributedCache.RemoveAsync(userCacheKey);
-            await _distributedCache.RemoveAsync(roleCacheKey);
+            if (roleCacheKey != null)
+            {
+                await _distributedCache.RemoveAsync(roleCacheKey);
+            }
 
             // Trả về kết quả sau khi cập nhật
             return Ok(new
@@ -574,7 +415,7 @@ public class UsersController : ControllerBase
                     user.Id,
                     user.Name,
                     user.Email,
-                    Role = user.Role.Id
+                    Role = user.Role != null ? user.Role.Id : (int?)null // Nếu role là null, trả về null
                 }
             });
         }
@@ -583,6 +424,43 @@ public class UsersController : ControllerBase
             return StatusCode(500, new { message = ex.Message });
         }
     }
+
+
+    [HttpPut("{userId}/Deactivate")]
+    public async Task<IActionResult> DeactivateUser(int userId)
+    {
+        try
+        {
+            // Lấy thông tin người dùng từ cơ sở dữ liệu
+            var user = await _context.Users
+                .Include(u => u.Role)
+                .FirstOrDefaultAsync(u => u.Id == userId);
+
+            if (user == null)
+                return NotFound(new { message = "Không tìm thấy người dùng" });
+
+            // Cập nhật cột isActive thành 0 (vô hiệu hóa người dùng)
+            user.IsActive = false;
+            user.UpdatedAt = DateTime.Now;
+
+            await _context.SaveChangesAsync();
+
+            // Xóa cache liên quan đến người dùng và danh sách vai trò
+            string userCacheKey = $"UserDetails_{userId}";
+            string roleCacheKey = $"UsersByRole_{user.Role.Id}";
+
+            await _distributedCache.RemoveAsync(userCacheKey);
+            await _distributedCache.RemoveAsync(roleCacheKey);
+
+            // Trả về kết quả sau khi cập nhật
+            return Ok(new { message = "Người dùng đã được vô hiệu hóa thành công" });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = ex.Message });
+        }
+    }
+
 
 
     [HttpPost("{userId}/AddAddress")]
@@ -614,6 +492,7 @@ public class UsersController : ControllerBase
                 City = request.City,
                 District = request.District,
                 PostalCode = request.PostalCode,
+                IsActive = request.IsActive,
                 IsDefault = request.IsDefault,
                 UserId = userId,
                 CreatedAt = DateTime.Now,
@@ -641,7 +520,8 @@ public class UsersController : ControllerBase
                     newAddress.City,
                     newAddress.District,
                     newAddress.PostalCode,
-                    newAddress.IsDefault
+                    newAddress.IsDefault,
+                    newAddress.IsActive
                 }
             });
         }
@@ -715,8 +595,9 @@ public class UsersController : ControllerBase
         }
     }
 
-    [HttpDelete("address/{addressId}")]
-    public async Task<IActionResult> DeleteAddress(int addressId)
+
+    [HttpPut("address/{addressId}/Deactivate")]
+    public async Task<IActionResult> DeactivateAddress(int addressId)
     {
         try
         {
@@ -727,8 +608,11 @@ public class UsersController : ControllerBase
             if (address == null)
                 return NotFound(new { message = "Không tìm thấy địa chỉ" });
 
-            _context.Addresses.Remove(address);
-            await _context.SaveChangesAsync();
+            // Cập nhật trạng thái IsActive thành 0
+            address.IsActive = false;
+
+            _context.Addresses.Update(address); // Cập nhật địa chỉ trong cơ sở dữ liệu
+            await _context.SaveChangesAsync(); // Lưu thay đổi
 
             // Xóa cache liên quan đến người dùng và thành phố
             string userCacheKey = $"UserDetails_{address.UserId}";
@@ -737,18 +621,15 @@ public class UsersController : ControllerBase
             await _distributedCache.RemoveAsync(userCacheKey);
             await _distributedCache.RemoveAsync(cityCacheKey);
 
-            // Trả về kết quả sau khi xóa
-            return Ok(new { message = "Xóa địa chỉ thành công" });
+            // Trả về kết quả sau khi cập nhật
+            return Ok(new { message = "Đã vô hiệu hóa địa chỉ thành công" });
         }
         catch (Exception ex)
         {
             return StatusCode(500, new { message = ex.Message });
         }
-    }
-
-
-
-    // Override phương thức InvalidateCache để xóa tất cả các cache keys
+    } 
+        // Override phương thức InvalidateCache để xóa tất cả các cache keys
     private async Task InvalidateCache()
     {
         await _cache.RemoveAsync(CacheKey);

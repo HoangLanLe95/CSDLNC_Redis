@@ -38,6 +38,22 @@
   },
   {
     "ContainingType": "UsersController",
+    "Method": "DeactivateUser",
+    "RelativePath": "api/Users/{userId}/Deactivate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersController",
     "Method": "UpdateUserInfo",
     "RelativePath": "api/Users/{userId}/UpdateInfo",
     "HttpMethod": "PUT",
@@ -80,9 +96,9 @@
   },
   {
     "ContainingType": "UsersController",
-    "Method": "DeleteAddress",
-    "RelativePath": "api/Users/address/{addressId}",
-    "HttpMethod": "DELETE",
+    "Method": "DeactivateAddress",
+    "RelativePath": "api/Users/address/{addressId}/Deactivate",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -112,8 +128,8 @@
   },
   {
     "ContainingType": "UsersController",
-    "Method": "GetAvailableRoles",
-    "RelativePath": "api/Users/GetAvailableRoles",
+    "Method": "GetRoles",
+    "RelativePath": "api/Users/GetRoles",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -122,14 +138,14 @@
   },
   {
     "ContainingType": "UsersController",
-    "Method": "GetUserDetails",
-    "RelativePath": "api/Users/GetUserDetails",
+    "Method": "GetUserList",
+    "RelativePath": "api/Users/GetUserList",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "city",
+        "Name": "username",
         "Type": "System.String",
         "IsRequired": false
       }
@@ -148,16 +164,6 @@
         "Name": "searchTerm",
         "Type": "System.String",
         "IsRequired": false
-      },
-      {
-        "Name": "city",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "roleName",
-        "Type": "System.String",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -165,7 +171,7 @@
   {
     "ContainingType": "UserManagementController",
     "Method": "Index",
-    "RelativePath": "users-management",
+    "RelativePath": "usersmanagement",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

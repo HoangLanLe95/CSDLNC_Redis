@@ -17,17 +17,17 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RedisApplication
 build_property.RootNamespace = RedisApplication
-build_property.ProjectDir = H:\CSDL_HuongDoiTuong\RedisApplication\RedisApplication\RedisApplication\
+build_property.ProjectDir = H:\CSDL_HuongDoiTuong\RedisApplication(2)\RedisApplication\RedisApplication\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = H:\CSDL_HuongDoiTuong\RedisApplication\RedisApplication\RedisApplication
+build_property.MSBuildProjectDirectory = H:\CSDL_HuongDoiTuong\RedisApplication(2)\RedisApplication\RedisApplication
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[H:/CSDL_HuongDoiTuong/RedisApplication/RedisApplication/RedisApplication/Views/UserManagement/Index.cshtml]
+[H:/CSDL_HuongDoiTuong/RedisApplication(2)/RedisApplication/RedisApplication/Views/UserManagement/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

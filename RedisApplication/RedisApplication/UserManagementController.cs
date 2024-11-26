@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-[Route("users-management")]
+[Route("usersmanagement")]
 public class UserManagementController : Controller
 {
     [HttpGet]
