@@ -1,0 +1,267 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+
+    <!-- Title -->
+    <title>..:: Quản lý thư viện ::..</title>
+
+    <!-- Favicon -->
+    <link href="/css/images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <link href="/css/style/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Mobile Menu -->
+    <link href="/css/style/mmenu.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style/mmenu.positioning.css" rel="stylesheet" type="text/css" />
+
+    <!-- Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+     
+</head>
+
+<body>
+    <section class="page-banner services-banner" style="min-height:100px !important">
+        
+    </section>
+    <!-- Start: Header Section -->
+    <header id="header-v1" class="navbar-wrapper inner-navbar-wrapper">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="navbar-header">
+                                <div class="navbar-brand">
+                                    <h1>
+                                        <a href="index-2.html">
+                                            <img src="/css/images/libraria-logo-v1.png" alt="LIBRARIA" />
+                                        </a>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <!-- Header Topbar -->
+                            <div class="header-topbar hidden-sm hidden-xs">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="topbar-info">
+                                            <a href=""><i class="fa fa-phone"></i>0292 3820 967</a>
+                                            <span>/</span>
+                                            <a href=""><i class="fa fa-envelope"></i>thuvien_tpct@cantho.gov.vn</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="topbar-links">
+                                            <a href="signin.html"><i class="fa fa-user"></i>Xin chào Thủ thư</a>
+                                            <span>|</span>
+                                            <div class="header-cart dropdown">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    <i>Thoát</i>
+                                                    <i class="fa fa-arrow-right"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar-collapse hidden-sm hidden-xs">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown active">
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="/">Trang chủ</a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="/Book/BookList">Danh mục sách</a>
+                                       @*  <ul class="dropdown-menu">
+                                            <li><a href="books-media-list-view.html">Sách</a></li>
+                                            <li><a href="books-media-gird-view-v2.html">Sách điện tử</a></li>
+                                            <li><a href="books-media-gird-view-v1.html">Tài liệu</a></li>
+                                        </ul> *@
+                                    </li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="/LibraryTransaction/TransactionList">Quản lý mượn/trả</a>
+                                        @* <ul class="dropdown-menu">
+                                            <li><a href="news-events-list-view.html">Danh sách mượn/trả</a></li>
+                                        </ul> *@
+                                    </li>
+                                    <li class="dropdown">
+                                        <a data-toggle="dropdown" class="dropdown-toggle disabled" href="/UserManagement/UserList">Độc giả</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+            <div class="books-full-width">
+                <div class="container">
+                    <!-- Start: Search Section -->
+                    <section class="search-filters">
+                        <div class="filter-box" style="padding:0px">
+                            <div class="bootstrap-scope"> 
+                                @RenderBody()
+                            </div>
+                            @RenderSection("CustomCss", required: false)
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div id="footer-widgets">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 widget-container">
+                        <div id="text-2" class="widget widget_text">
+                            <h3 class="footer-widget-title" style="font-family:sans-serif">THÔNG TIN THƯ VIỆN</h3>
+                            <span class="underline left"></span>
+                            <div class="textwidget">
+                               
+                            </div>
+                            <address>
+                                <div class="info">
+                                    <i class="fa fa-location-arrow"></i>
+                                    <span>1 Phan Đình Phùng, Tân An, Ninh Kiều, Cần Thơ</span>
+                                </div>
+                                <div class="info">
+                                    <i class="fa fa-envelope"></i>
+                                    <span><a href="#">thuvien_tpct@cantho.gov.vn</a></span>
+                                </div>
+                                <div class="info">
+                                    <i class="fa fa-phone"></i>
+                                    <span><a href="#">0292 3820 967</a></span>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 widget-container">
+                        <div id="nav_menu-2" class="widget widget_nav_menu">
+                            <h3 class="footer-widget-title" style="font-family:sans-serif">Có thể bạn quan tâm</h3>
+                            <span class="underline left"></span>
+                            <div class="menu-quick-links-container">
+                                <ul id="menu-quick-links" class="menu">
+                                    <li><a href="#">Cổng thông tin điện tử tỉnh</a></li>
+                                    <li><a href="#">Trang thông tin thư viện tỉnh</a></li>
+                                    <li><a href="#">Sở Văn hoá, Thể thao và Du lịch</a></li>
+                                    <li><a href="#">Hội Thư viện Việt Nam</a></li>
+                                    <li><a href="#">Đại học Cần Thơ</a></li>
+                                    <li><a href="#">Đài PTTH Cần Thơ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-lg hidden-md hidden-xs tablet-margin-bottom"></div>
+                    <div class="col-md-4 col-sm-6 widget-container">
+                        <div id="text-4" class="widget widget_text">
+                            <h3 class="footer-widget-title" style="font-family:sans-serif">Thời gian hoạt động</h3>
+                            <span class="underline left"></span>
+                            <div class="timming-text-widget">
+                                <time datetime="2017-02-13">Thứ 2 - Thứ 6: 7 am - 5 pm</time> 
+                                <time datetime="2017-02-13">Thứ 7: nghỉ phục vụ</time>
+                                <time datetime="2017-02-13">Chủ nhật: 7 am - 5 pm</time> 
+                            </div>
+                        </div>
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-text col-md-3">
+                        <p><a target="_blank" href="https://www.templateshub.net"></a></p>
+                    </div>
+                    <div class="col-md-9 pull-right">
+                        <ul>
+                            <li style="font-family:sans-serif"><a href="/">Trang chủ</a></li>
+                            <li style="font-family:sans-serif"><a href="/Book/BookList">Danh mục sách</a></li>
+                            <li style="font-family:sans-serif"><a href="/LibraryTransaction/TransactionList">Quản lý mượn/trả</a></li>
+                            <li style="font-family:sans-serif"><a href="/UserManagement/UserList">Độc giả</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- End: Footer -->
+    <!-- jQuery Latest Version 1.x -->
+    <script type="text/javascript" src="/css/js/jquery-1.12.4.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script type="text/javascript" src="/css/js/jquery-ui.min.js"></script>
+
+    <!-- jQuery Easing -->
+    <script type="text/javascript" src="/css/js/jquery.easing.1.3.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="/css/js/bootstrap.min.js"></script>
+
+    <!-- Mobile Menu -->
+    <script type="text/javascript" src="/css/js/mmenu.min.js"></script>
+
+    <!-- Harvey - State manager for media queries -->
+    <script type="text/javascript" src="/css/js/harvey.min.js"></script>
+
+    <!-- Waypoints - Load Elements on View -->
+    <script type="text/javascript" src="/css/js/waypoints.min.js"></script>
+
+    <!-- Facts Counter -->
+    <script type="text/javascript" src="/css/js/facts.counter.min.js"></script>
+
+    <!-- MixItUp - Category Filter -->
+    <script type="text/javascript" src="/css/js/mixitup.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="/css/js/owl.carousel.min.js"></script>
+
+    <!-- Accordion -->
+    <script type="text/javascript" src="/css/js/accordion.min.js"></script>
+
+    <!-- Responsive Tabs -->
+    <script type="text/javascript" src="/css/js/responsive.tabs.min.js"></script>
+
+    <!-- Responsive Table -->
+    <script type="text/javascript" src="/css/js/responsive.table.min.js"></script>
+
+    <!-- Masonry -->
+    <script type="text/javascript" src="/css/js/masonry.min.js"></script>
+
+    <!-- Carousel Swipe -->
+    <script type="text/javascript" src="/css/js/carousel.swipe.min.js"></script>
+
+    <!-- bxSlider -->
+    <script type="text/javascript" src="/css/js/bxslider.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="/css/js/main.js"></script>
+
+</body>
+
+
+</html>
+}

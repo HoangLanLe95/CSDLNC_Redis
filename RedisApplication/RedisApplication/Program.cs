@@ -21,7 +21,14 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.Configuration = builder.Configuration.GetConnectionString("Redis");
     options.InstanceName = "SampleInstance_";
 });
-
+// CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowLocalhost",
+        policy => policy.WithOrigins("https://localhost:7260")  // frontend 
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+});
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -38,7 +45,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
-
+app.UseCors("AllowLocalhost");
 // Định tuyến hỗ trợ Razor Pages
 app.MapControllers();
 app.MapRazorPages(); // Bổ sung dòng này nếu chưa có

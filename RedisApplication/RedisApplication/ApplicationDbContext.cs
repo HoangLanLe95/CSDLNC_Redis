@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RedisApplication;
+using RedisApplication.Model;
 
 public class ApplicationDbContext : DbContext
 {
