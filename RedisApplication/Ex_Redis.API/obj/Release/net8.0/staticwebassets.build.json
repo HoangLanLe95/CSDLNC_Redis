@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "COaEciWgsFkEaJKBPngGcB+XcnujDpvngfkp4eiKgiE=",
+  "Source": "Ex_Redis.API",
+  "BasePath": "_content/Ex_Redis.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

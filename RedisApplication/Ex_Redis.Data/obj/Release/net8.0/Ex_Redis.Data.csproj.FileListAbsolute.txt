@@ -1,0 +1,15 @@
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\bin\Release\net8.0\Ex_Redis.Data.deps.json
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\bin\Release\net8.0\Ex_Redis.Data.runtimeconfig.json
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\bin\Release\net8.0\Ex_Redis.Data.dll
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\bin\Release\net8.0\Ex_Redis.Data.pdb
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.csproj.AssemblyReference.cache
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.GeneratedMSBuildEditorConfig.editorconfig
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.AssemblyInfoInputs.cache
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.AssemblyInfo.cs
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.csproj.CoreCompileInputs.cache
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.sourcelink.json
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.dll
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\refint\Ex_Redis.Data.dll
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.pdb
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\Ex_Redis.Data.genruntimeconfig.cache
+H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\Ex_Redis.Data\obj\Release\net8.0\ref\Ex_Redis.Data.dll

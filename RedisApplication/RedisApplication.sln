@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisApplication", "RedisAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisWebApplication", "RedisWebApplication\RedisWebApplication.csproj", "{50401239-3506-4067-A1B4-0188D9892499}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_Redis.API", "Ex_Redis.API\Ex_Redis.API.csproj", "{09C8E4A3-EAAB-4ECC-9F6A-031C533EBA03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex_Redis.Data", "Ex_Redis.Data\Ex_Redis.Data.csproj", "{B5CC2EB8-9D34-43E9-B4C6-E251F0952096}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{50401239-3506-4067-A1B4-0188D9892499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50401239-3506-4067-A1B4-0188D9892499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50401239-3506-4067-A1B4-0188D9892499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C8E4A3-EAAB-4ECC-9F6A-031C533EBA03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C8E4A3-EAAB-4ECC-9F6A-031C533EBA03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C8E4A3-EAAB-4ECC-9F6A-031C533EBA03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C8E4A3-EAAB-4ECC-9F6A-031C533EBA03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CC2EB8-9D34-43E9-B4C6-E251F0952096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CC2EB8-9D34-43E9-B4C6-E251F0952096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CC2EB8-9D34-43E9-B4C6-E251F0952096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CC2EB8-9D34-43E9-B4C6-E251F0952096}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,12 @@ namespace RedisWebApplication.Controllers
     {
         public IActionResult BookList()
         {
-            ViewBag.ApiUrl = ApiUrls.ApiUrl;
+            ViewBag.ApiUrl = ApiUrls.ApiUrl2;
+            return View();
+        }
+        public IActionResult _booklist()
+        {
+            ViewBag.ApiUrl = ApiUrls.ApiUrl2;
             return View();
         }
     }

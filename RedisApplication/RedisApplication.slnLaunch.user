@@ -9,6 +9,10 @@
       {
         "Path": "RedisWebApplication\\RedisWebApplication.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "Ex_Redis.API\\Ex_Redis.API.csproj",
+        "Action": "Start"
       }
     ]
   }

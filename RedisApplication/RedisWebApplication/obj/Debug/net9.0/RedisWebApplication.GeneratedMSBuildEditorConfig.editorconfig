@@ -24,12 +24,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xCb29rTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[H:/CoSoDuLieuNangCao/RedisApplication(2)/RedisApplication/RedisWebApplication/Views/Book/_booklist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xfYm9va2xpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [H:/CoSoDuLieuNangCao/RedisApplication(2)/RedisApplication/RedisWebApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [H:/CoSoDuLieuNangCao/RedisApplication(2)/RedisApplication/RedisWebApplication/Views/LibraryTransaction/TransactionList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVRyYW5zYWN0aW9uXFRyYW5zYWN0aW9uTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[H:/CoSoDuLieuNangCao/RedisApplication(2)/RedisApplication/RedisWebApplication/Views/LibraryTransaction/_transactionlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVRyYW5zYWN0aW9uXF90cmFuc2FjdGlvbmxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [H:/CoSoDuLieuNangCao/RedisApplication(2)/RedisApplication/RedisWebApplication/Views/Shared/_layout.cshtml]

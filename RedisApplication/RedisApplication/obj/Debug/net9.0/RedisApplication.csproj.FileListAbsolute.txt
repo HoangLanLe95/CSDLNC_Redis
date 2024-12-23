@@ -141,8 +141,6 @@ H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\D
 H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\RedisApplication.csproj.CoreCompileInputs.cache
 H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\RedisApplication.MvcApplicationPartsAssemblyInfo.cs
 H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\RedisApplication.MvcApplicationPartsAssemblyInfo.cache
-H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\RedisApplication.RazorAssemblyInfo.cache
-H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\RedisApplication.RazorAssemblyInfo.cs
 H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\RedisApplication.sourcelink.json
 H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\scopedcss\bundle\RedisApplication.styles.css
 H:\CoSoDuLieuNangCao\RedisApplication(2)\RedisApplication\RedisApplication\obj\Debug\net9.0\staticwebassets.build.json

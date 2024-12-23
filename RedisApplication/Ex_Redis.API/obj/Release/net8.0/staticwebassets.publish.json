@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "BFO/OIeXOkpguQrgk3FB4bXtdA+e4yYGbLx2mu3YRZ4=",
+  "Source": "Ex_Redis.API",
+  "BasePath": "_content/Ex_Redis.API",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

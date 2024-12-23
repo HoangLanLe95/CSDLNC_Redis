@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\views\\usermanagement\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\views\\usermanagement\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\redisapplication\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AC080EE-D83D-44D6-8641-AF2CFBCC85A7}|RedisApplication\\RedisApplication.csproj|solutionrelative:redisapplication\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\wwwroot\\js\\transaction.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\wwwroot\\js\\transaction.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{09C8E4A3-EAAB-4ECC-9F6A-031C533EBA03}|Ex_Redis.API\\Ex_Redis.API.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\ex_redis.api\\services\\implements\\borrowrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E4A3-EAAB-4ECC-9F6A-031C533EBA03}|Ex_Redis.API\\Ex_Redis.API.csproj|solutionrelative:ex_redis.api\\services\\implements\\borrowrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B5CC2EB8-9D34-43E9-B4C6-E251F0952096}|Ex_Redis.Data\\Ex_Redis.Data.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\ex_redis.data\\entities\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CC2EB8-9D34-43E9-B4C6-E251F0952096}|Ex_Redis.Data\\Ex_Redis.Data.csproj|solutionrelative:ex_redis.data\\entities\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\views\\librarytransaction\\transactionlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\views\\librarytransaction\\transactionlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\views\\librarytransaction\\_transactionlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\views\\librarytransaction\\_transactionlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\views\\book\\booklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\views\\book\\booklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|h:\\cosodulieunangcao\\redisapplication(2)\\redisapplication\\rediswebapplication\\wwwroot\\js\\usermanagement.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{50401239-3506-4067-A1B4-0188D9892499}|RedisWebApplication\\RedisWebApplication.csproj|solutionrelative:rediswebapplication\\wwwroot\\js\\usermanagement.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,92 +39,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserList.cshtml",
-              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\UserManagement\\UserList.cshtml",
-              "RelativeDocumentMoniker": "RedisWebApplication\\Views\\UserManagement\\UserList.cshtml",
-              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\UserManagement\\UserList.cshtml",
-              "RelativeToolTip": "RedisWebApplication\\Views\\UserManagement\\UserList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T02:23:16.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserManagementController.cs",
-              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Controllers\\UserManagementController.cs",
-              "RelativeDocumentMoniker": "RedisWebApplication\\Controllers\\UserManagementController.cs",
-              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Controllers\\UserManagementController.cs",
-              "RelativeToolTip": "RedisWebApplication\\Controllers\\UserManagementController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisApplication\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "RedisApplication\\Controllers\\UsersController.cs",
+              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisApplication\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "RedisApplication\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowFUAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T02:21:28.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TransactionList.cshtml",
-              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\LibraryTransaction\\TransactionList.cshtml",
-              "RelativeDocumentMoniker": "RedisWebApplication\\Views\\LibraryTransaction\\TransactionList.cshtml",
-              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\LibraryTransaction\\TransactionList.cshtml",
-              "RelativeToolTip": "RedisWebApplication\\Views\\LibraryTransaction\\TransactionList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T02:19:14.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookList.cshtml",
-              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\Book\\BookList.cshtml",
-              "RelativeDocumentMoniker": "RedisWebApplication\\Views\\Book\\BookList.cshtml",
-              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\Book\\BookList.cshtml",
-              "RelativeToolTip": "RedisWebApplication\\Views\\Book\\BookList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T02:18:43.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "RedisWebApplication\\Controllers\\BookController.cs",
-              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Controllers\\BookController.cs",
-              "RelativeToolTip": "RedisWebApplication\\Controllers\\BookController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T02:16:06.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_layout.cshtml",
-              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\Shared\\_layout.cshtml",
-              "RelativeDocumentMoniker": "RedisWebApplication\\Views\\Shared\\_layout.cshtml",
-              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\Shared\\_layout.cshtml",
-              "RelativeToolTip": "RedisWebApplication\\Views\\Shared\\_layout.cshtml",
-              "ViewState": "AgIAALMAAAAAAAAAAAAjwNIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T02:13:17.339Z",
+              "WhenOpened": "2024-12-22T20:10:09.032Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "RedisWebApplication\\Views\\Home\\Index.cshtml",
-              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "RedisWebApplication\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAjwK4AAAA9AAAAAAAAAA==",
+              "Title": "BorrowRecordService.cs",
+              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\Ex_Redis.API\\Services\\Implements\\BorrowRecordService.cs",
+              "RelativeDocumentMoniker": "Ex_Redis.API\\Services\\Implements\\BorrowRecordService.cs",
+              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\Ex_Redis.API\\Services\\Implements\\BorrowRecordService.cs",
+              "RelativeToolTip": "Ex_Redis.API\\Services\\Implements\\BorrowRecordService.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAD4v3gAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:59:07.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserManagement.js",
+              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\UserManagement.js",
+              "RelativeDocumentMoniker": "RedisWebApplication\\wwwroot\\js\\UserManagement.js",
+              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\UserManagement.js",
+              "RelativeToolTip": "RedisWebApplication\\wwwroot\\js\\UserManagement.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-22T18:39:36.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BorrowRecord.cs",
+              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\Ex_Redis.Data\\Entities\\BorrowRecord.cs",
+              "RelativeDocumentMoniker": "Ex_Redis.Data\\Entities\\BorrowRecord.cs",
+              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\Ex_Redis.Data\\Entities\\BorrowRecord.cs",
+              "RelativeToolTip": "Ex_Redis.Data\\Entities\\BorrowRecord.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAhwBUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T18:36:10.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_transactionlist.cshtml",
+              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\LibraryTransaction\\_transactionlist.cshtml",
+              "RelativeDocumentMoniker": "RedisWebApplication\\Views\\LibraryTransaction\\_transactionlist.cshtml",
+              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\Views\\LibraryTransaction\\_transactionlist.cshtml",
+              "RelativeToolTip": "RedisWebApplication\\Views\\LibraryTransaction\\_transactionlist.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAGcAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-14T02:09:45.786Z",
+              "WhenOpened": "2024-12-22T18:28:06.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "transaction.js",
+              "DocumentMoniker": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\transaction.js",
+              "RelativeDocumentMoniker": "RedisWebApplication\\wwwroot\\js\\transaction.js",
+              "ToolTip": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\transaction.js",
+              "RelativeToolTip": "RedisWebApplication\\wwwroot\\js\\transaction.js",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAtwGoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-22T18:28:04.389Z",
               "EditorCaption": ""
             }
           ]
