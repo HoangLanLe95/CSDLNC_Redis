@@ -1,0 +1,14 @@
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Thiếu nhi', 'Sách dành cho trẻ em với nội dung dễ hiểu và giáo dục.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Trinh thám', 'Sách với các câu chuyện điều tra, phá án, và hồi hộp.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Giả tưởng', 'Tác phẩm với các yếu tố huyền bí, thế giới tưởng tượng.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Khoa học viễn tưởng', 'Sách về công nghệ, không gian, hoặc tương lai giả định.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Lãng mạn', 'Sách về tình yêu và các mối quan hệ cảm xúc.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Kinh dị', 'Sách gây sợ hãi với yếu tố ma quái hoặc hồi hộp.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Tiểu thuyết lịch sử', 'Sách dựa trên các sự kiện lịch sử, thường hư cấu một phần.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Phiêu lưu', 'Sách với các chuyến hành trình, khám phá và mạo hiểm.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Tự truyện', 'Sách kể về chính cuộc đời của tác giả.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Thơ ca', 'Tác phẩm văn học sử dụng ngôn ngữ có nhịp điệu, vần điệu.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Sách tự lực', 'Sách cung cấp lời khuyên, hướng dẫn để cải thiện bản thân.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Truyện ngắn', 'Là thể loại văn học kể một câu chuyện ngắn gọn, tập trung vào một tình huống hoặc sự kiện đặc biệt, thường có kết thúc bất ngờ.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Truyện dài', 'Là thể loại văn học với cốt truyện phức tạp, kéo dài qua nhiều chương, phát triển sâu về nhân vật và tình huống trong một khoảng thời gian dài.');
+INSERT INTO [dbo].[Genres] ([Name], [Description]) VALUES ('Pháp luật', 'Cung cấp kiến thức về các quy định, luật lệ, và quyền lợi trong hệ thống pháp lý, giúp độc giả hiểu và áp dụng luật trong đời sống.');
