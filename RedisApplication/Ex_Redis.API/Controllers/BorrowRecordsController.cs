@@ -1,4 +1,5 @@
-﻿using Ex_Redis.API.Services.Interfaces;
+﻿using Ex_Redis.API.Services.Implements;
+using Ex_Redis.API.Services.Interfaces;
 using Ex_Redis.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -66,5 +67,6 @@ namespace Ex_Redis.API.Controllers
 			if (!result) return NotFound();
 			return NoContent();
 		}
-	}
+
+    }
 }

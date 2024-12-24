@@ -59,33 +59,10 @@ namespace Ex_Redis.API.Services.Implements
 			return book;
 		}
 
-        //public async Task<bool> DeleteAsync(int id)
-        //{
-        //	var book = await _context.Books.FindAsync(id);
-        //	if (book == null) return false;
-
-        //	_context.Books.Remove(book);
-        //	await _context.SaveChangesAsync();
-
-        //	var cacheKey = $"{CacheKey}:{id}";
-        //	await _cacheService.RemoveAsync(CacheKey);
-        //	await _cacheService.RemoveAsync(cacheKey);
-        //	return true;
-        //}
         public async Task<bool> DeleteAsync(int id)
         {
-            // Tìm sách theo id
             var book = await _context.Books.FindAsync(id);
             if (book == null) return false;
-
-            var borrowRecord = await _context.BorrowRecords
-                                              .Where(br => br.BookId == id && br.IsReturned == false)
-                                              .FirstOrDefaultAsync();
-
-            if (borrowRecord != null)
-            {
-                return false;
-            }
 
             _context.Books.Remove(book);
             await _context.SaveChangesAsync();
@@ -93,11 +70,9 @@ namespace Ex_Redis.API.Services.Implements
             var cacheKey = $"{CacheKey}:{id}";
             await _cacheService.RemoveAsync(CacheKey);
             await _cacheService.RemoveAsync(cacheKey);
-
             return true;
         }
-
-
+         
         public async Task<BookViewModel> GetByIdAsync(int id)
         {
             var cacheKey = $"{CacheKey}:{id}";
@@ -147,6 +122,7 @@ namespace Ex_Redis.API.Services.Implements
         }
 
 
+       
 
 
     }

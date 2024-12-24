@@ -1,12 +1,12 @@
 ﻿<link href="~/css/bootstrap.min.css" rel="stylesheet" />
-
+ 
 <div id="divcontainer"> 
     <input type="hidden" id="apiUrl" value="@ViewBag.ApiUrl" />
 
     <div class="container mt-5 text-center">
         <h2>DANH SÁCH NGƯỜI DÙNG</h2>
         </div>
-    <div class="container mt-5"> 
+    <div class="container mt-5" style="margin:50px; width:100%; max-width:92%"> 
         <div class="row mb-3" style="margin-top:20px">
             <div class="col-md-2">
                 <label style="margin:10px">Tìm kiếm: </label>
@@ -26,7 +26,7 @@
                     <th>Tên</th>
                     <th>Email</th>
                     <th>Vai trò</th>
-                    <th>Thao tác</th>
+                    <th style="text-align:center">Thao tác</th>
                 </tr>
             </thead>
             <tbody id="userTableBody"></tbody>
@@ -77,12 +77,16 @@
                             <div class="col-md-6" id="divdiachi">
                                 <h5>Địa chỉ</h5>
                                 <div id="addressesContainer"></div>
-                                <button type="button" class="btn btn-secondary mt-2" id="btnAddAddress">
-                                    <i class="fas fa-plus"></i> Thêm địa chỉ
-                                </button>
+                                <div style="text-align:right">
+                                    <button type="button" class="btn btn-secondary mt-2" id="btnAddAddress">
+                                        <i class="fas fa-plus"></i> Thêm địa chỉ
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3">Lưu</button>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary mt-3">Lưu</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -113,11 +117,13 @@
                             <label for="addressCity" class="form-label">Tỉnh/Thành phố</label>
                             <input type="text" class="form-control" id="addressCity" placeholder="Nhập tỉnh/thành phố..." required>
                         </div>
-                        <div class="form-check">
+                        <div class="form-check" style="display:none">
                             <input class="form-check-input" type="checkbox" id="addressIsDefault">
                             <label class="form-check-label" for="addressIsDefault">Đặt làm địa chỉ mặc định</label>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-3">Lưu</button>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary mt-3">Lưu</button>
+                        </div>
                     </form>
                 </div>
             </div>

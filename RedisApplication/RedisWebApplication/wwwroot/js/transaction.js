@@ -2,49 +2,9 @@
 const apiUrl2 = $('#apiUrl').val();
 
 $(document).ready(function () {
-    loadtransactions();
-    setupSearch();
+    loadtransactions(); 
 });
-
-function setupSearch() {
-    let searchTimer;
-    $('#searchInput').on('input change', function () {
-        clearTimeout(searchTimer);
-        searchTimer = setTimeout(Searchtransaction, 500);
-    });
-}
-function Searchtransaction() {
-    const searchTerm = $('#searchInput').val().trim();
-
-    $.ajax({
-        url: `${apiUrl}/transactions/search?query=${searchTerm}`,
-        method: 'GET',
-        success: function (response) {
-            let rows = '';
-            response.forEach(transaction => {
-                rows += `<tr>
-                           <td>${transaction.id}</td>
-                           <td>${transaction.title}</td>
-                           <td>${transaction.author}</td>
-                           <td>${transaction.publishYear}</td> 
-                           <td>
-                              <button style="color:#fff" class="button btn btn-info btn-default btnViewDetails" data-id="${transaction.id}">Xem chi tiết</button>
-                              <button style="color:#fff" class="button btn btn-warning btn-default btnEdit" data-id="${transaction.id}">Sửa</button>
-                              <button style="color:#fff" class="button btn btn-danger btn-default btnDelete" data-id="${transaction.id}">Xóa</button>
-                           </td>
-                           </tr>`;
-            });
-            $('#transactionTableBody').html(rows);
-
-        },
-        error: function (xhr) {
-            $('#transactionTableBody').empty();
-            $('#searchResultCount').html(xhr.responseJSON.message || 'Không tìm thấy kết quả');
-        }
-    });
-}
-
-
+  
 //btnAddtransaction
 $('#btnAddtransaction').click(function () {
     $('#transactionModalLabel').text('THÊM CHI TIẾT MƯỢN SÁCH');
@@ -108,7 +68,7 @@ function loadtransactions() {
                <td>
                   <button style="color:#fff" class="button btn btn-info btn-default btnViewDetails" data-id="${t.id}">Xem chi tiết</button>
                   <button style="color:#fff" class="button btn btn-warning btn-default btnEdit" data-id="${t.id}">Sửa</button>
-                  <button style="color:#fff" class="button btn btn-danger btn-default btnDelete" data-id="${t.id}">Check trả</button>
+                  <button style="color:#fff" class="button btn btn-danger btn-default btnDelete" data-id="${t.id}">Xóa</button>
                </td>
                </tr>`;
                
@@ -139,7 +99,7 @@ $(document).on('click', '.btnViewDetails', function () {
                           <p><strong>Tên sách:</strong> ${t.bookTitle}</p>
                           <p><strong>Người mượn:</strong> ${t.userName}</p>
                           <p><strong>Ngày mượn:</strong> ${borrowDate}</p>
-                          <p><strong>Ngày trả (dự kiến):</strong> ${dueDate}</p>
+                          <p><strong>Ngày đến hạn:</strong> ${dueDate}</p>
                           <p><strong>Ngày trả:</strong> ${returnDate}</p>
                           <p><strong>Đã trả:</strong> ${isReturned}</p>  
                       `);
@@ -233,9 +193,9 @@ $('#transactionForm').submit(function (e) {
 //btnDelete
 $(document).on('click', '.btnDelete', function () {
     const id = $(this).data('id');
-    if (confirm('Bạn có chắc chắn muốn xóa sách này?')) {
+    if (confirm('Bạn có chắc chắn muốn xóa thông tin này?')) {
         $.ajax({
-            url: `${apiUrl}/transactions/${id}`,
+            url: `${apiUrl}/BorrowRecords/${id}`,
             method: 'DELETE',
             success: function () {
                 loadtransactions();

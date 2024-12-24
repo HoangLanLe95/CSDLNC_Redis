@@ -151,5 +151,6 @@ namespace Ex_Redis.API.Services.Implements
 			await _cacheService.RemoveAsync($"{CacheKey}:book:{record.BookId}");
 			return true;
 		}
-	}
+         
+    }
 }

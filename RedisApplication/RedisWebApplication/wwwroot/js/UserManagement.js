@@ -26,13 +26,15 @@ function SearchUser() {
         },
         success: function (response) {
             let rows = '';
+            let stt = 0;
             response.users.forEach(user => {
+                stt++;
                 rows += `<tr>
-                           <td>${user.id}</td>
+                           <td>${stt}</td>
                            <td>${user.name}</td>
                            <td>${user.email}</td>
                            <td>${user.role}</td>
-                           <td>
+                           <td style="text-align:center">
                               <button class="button btn btn-info btn-default btnViewDetails" data-id="${user.id}">Xem chi tiết</button>
                               <button class="button btn btn-warning btn-default btnEdit" data-id="${user.id}">Sửa</button>
                               <button class="button btn btn-danger btn-default btnDelete" data-id="${user.id}">Xóa</button>
@@ -53,14 +55,16 @@ function loadUsers() {
         url: apiUrl + '/Users/GetUserList',
         method: 'GET',
         success: function (data) {
+            let stt = 0;
             let rows = '';
             data.forEach(user => {
+                stt++;
                 rows += `<tr>
-                           <td>${user.id}</td>
+                           <td>${stt}</td>
                            <td>${user.userName}</td>
                            <td>${user.email}</td>
                            <td>${user.roleName}</td>
-                           <td>
+                           <td style="text-align:center">
                               <button style="color:#fff" class="button btn btn-info btn-default btnViewDetails" data-id="${user.id}">Xem chi tiết</button>
                               <button style="color:#fff" class="button btn btn-warning btn-default btnEdit" data-id="${user.id}">Sửa</button>
                               <button style="color:#fff" class="button btn btn-danger btn-default btnDelete" data-id="${user.id}">Xóa</button>

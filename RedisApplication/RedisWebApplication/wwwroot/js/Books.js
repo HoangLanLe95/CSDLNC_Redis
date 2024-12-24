@@ -20,9 +20,11 @@ function SearchBook() {
         method: 'GET',
         success: function (response) {
             let rows = '';
+            let stt = 0;
             response.forEach(book => {
+                stt++;
                 rows += `<tr>
-                           <td>${book.id}</td>
+                           <td>${stt}</td>
                            <td>${book.title}</td>
                            <td>${book.author}</td>
                            <td>${book.publishYear}</td> 
@@ -47,11 +49,13 @@ function loadBooks() {
     $.ajax({
         url: `${apiUrl}/Books`,
         method: 'GET',
-        success: function (data) {
+        success: function (data) { 
             let rows = '';
+            let stt = 0;
             data.forEach(book => {
+                stt++;
                 rows += `<tr>
-                           <td>${book.id}</td>
+                           <td>${stt}</td>
                            <td>${book.title}</td>
                            <td>${book.author}</td>
                            <td>${book.publishYear}</td> 

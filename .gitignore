@@ -1,3 +1,5 @@
 
 *.bin
 /RedisApplication/RedisWebApplication/obj
+/RedisApplication/RedisApplication/obj
+/RedisApplication/RedisApplication/obj

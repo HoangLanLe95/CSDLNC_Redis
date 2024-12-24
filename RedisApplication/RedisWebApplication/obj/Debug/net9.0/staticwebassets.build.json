@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HEq1m/BdQ/RcgVWSzSaJ8rSQKn9fMZSdjs+ut4k0GGk=",
+  "Hash": "+QL/Oivn5GA89Zo9NIXXZNV76g27uM6uGi0heQ/3t/I=",
   "Source": "RedisWebApplication",
   "BasePath": "_content/RedisWebApplication",
   "Mode": "Default",
@@ -248,12 +248,12 @@
       "OriginalItemSpec": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-27gznbgyt2.gz",
+      "Identity": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-653vg32dp0.gz",
       "SourceId": "RedisWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/RedisWebApplication",
-      "RelativePath": "js/transaction#[.{fingerprint=27gznbgyt2}]?.js.gz",
+      "RelativePath": "js/transaction#[.{fingerprint=653vg32dp0}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -262,8 +262,8 @@
       "RelatedAsset": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\transaction.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "g3zi0tw2w1",
-      "Integrity": "LJb0ZpSOG3AWtwTbFZGUmDtlCMp5aTDIiiEgZEGzYEM=",
+      "Fingerprint": "1rcu5vgt5f",
+      "Integrity": "8yLxwuYXryX4d3TmLpRr037TgkVHY5Ok1Yeo3A3sha0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\transaction.js"
@@ -1340,12 +1340,12 @@
       "OriginalItemSpec": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-4etz2ts3ep.gz",
+      "Identity": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-aw80ccekll.gz",
       "SourceId": "RedisWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/RedisWebApplication",
-      "RelativePath": "js/UserManagement#[.{fingerprint=4etz2ts3ep}]?.js.gz",
+      "RelativePath": "js/UserManagement#[.{fingerprint=aw80ccekll}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1354,8 +1354,8 @@
       "RelatedAsset": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\UserManagement.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "p494hui14j",
-      "Integrity": "x6/MJB2HMYyGIzSWv52QF6vbkw4A823DL92F/1oK+so=",
+      "Fingerprint": "l32om0oh0z",
+      "Integrity": "X0mDJyR3P8m6O4Hv6CW6DIrG8Tx/48bNOsPUR4KFgN0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\UserManagement.js"
@@ -1403,12 +1403,12 @@
       "OriginalItemSpec": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-r2cwoikvpr.gz",
+      "Identity": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-i29z71jvad.gz",
       "SourceId": "RedisWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/RedisWebApplication",
-      "RelativePath": "js/Books#[.{fingerprint=r2cwoikvpr}]?.js.gz",
+      "RelativePath": "js/Books#[.{fingerprint=i29z71jvad}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\Books.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gzx74z5kj9",
-      "Integrity": "zOfvFzK7eAZCVZKTsPHbVqO34m0RXNffprSOXS83mfs=",
+      "Fingerprint": "ehjik7l3fx",
+      "Integrity": "IlMSWzb9QCYAORYf8PxRbtcacuUkjMO6VZ6Lak3EZwc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\Books.js"
@@ -1522,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "r2cwoikvpr",
-      "Integrity": "I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM=",
+      "Fingerprint": "i29z71jvad",
+      "Integrity": "qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Books.js"
@@ -1564,8 +1564,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "27gznbgyt2",
-      "Integrity": "QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY=",
+      "Fingerprint": "653vg32dp0",
+      "Integrity": "qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\transaction.js"
@@ -1606,8 +1606,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4etz2ts3ep",
-      "Integrity": "dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng=",
+      "Fingerprint": "aw80ccekll",
+      "Integrity": "CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\UserManagement.js"
@@ -4046,13 +4046,13 @@
       ]
     },
     {
-      "Route": "js/Books.js",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-r2cwoikvpr.gz",
+      "Route": "js/Books.i29z71jvad.js",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-i29z71jvad.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000543183053"
+          "Quality": "0.000536480687"
         }
       ],
       "ResponseHeaders": [
@@ -4062,19 +4062,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1840"
+          "Value": "1863"
         },
         {
           "Name": "ETag",
-          "Value": "\"zOfvFzK7eAZCVZKTsPHbVqO34m0RXNffprSOXS83mfs=\""
+          "Value": "\"IlMSWzb9QCYAORYf8PxRbtcacuUkjMO6VZ6Lak3EZwc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:19:01 GMT"
+          "Value": "Tue, 24 Dec 2024 07:59:50 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4090,18 +4090,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM=\""
+          "Value": "W/\"qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "i29z71jvad"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Books.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM="
+          "Value": "sha256-qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE="
         }
       ]
     },
     {
-      "Route": "js/Books.js",
+      "Route": "js/Books.i29z71jvad.js",
       "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\Books.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4111,7 +4119,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7648"
+          "Value": "7741"
         },
         {
           "Name": "Content-Type",
@@ -4119,121 +4127,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM=\""
+          "Value": "\"qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:19:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM="
-        }
-      ]
-    },
-    {
-      "Route": "js/Books.js.gz",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-r2cwoikvpr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1840"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zOfvFzK7eAZCVZKTsPHbVqO34m0RXNffprSOXS83mfs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:19:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-zOfvFzK7eAZCVZKTsPHbVqO34m0RXNffprSOXS83mfs="
-        }
-      ]
-    },
-    {
-      "Route": "js/Books.r2cwoikvpr.js",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-r2cwoikvpr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000543183053"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1840"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zOfvFzK7eAZCVZKTsPHbVqO34m0RXNffprSOXS83mfs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:19:01 GMT"
+          "Value": "Tue, 24 Dec 2024 07:59:50 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "r2cwoikvpr"
+          "Value": "i29z71jvad"
         },
         {
           "Name": "label",
@@ -4241,13 +4149,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM="
+          "Value": "sha256-qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE="
         }
       ]
     },
     {
-      "Route": "js/Books.r2cwoikvpr.js",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\Books.js",
+      "Route": "js/Books.i29z71jvad.js.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-i29z71jvad.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4256,7 +4164,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7648"
+          "Value": "1863"
         },
         {
           "Name": "Content-Type",
@@ -4264,56 +4172,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM=\""
+          "Value": "\"IlMSWzb9QCYAORYf8PxRbtcacuUkjMO6VZ6Lak3EZwc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:19:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r2cwoikvpr"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Books.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-I6Up0euFNT5C8pcSzwDHUMfjnkpI4DJduj7mZIoiQpM="
-        }
-      ]
-    },
-    {
-      "Route": "js/Books.r2cwoikvpr.js.gz",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-r2cwoikvpr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1840"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"zOfvFzK7eAZCVZKTsPHbVqO34m0RXNffprSOXS83mfs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:19:01 GMT"
+          "Value": "Tue, 24 Dec 2024 07:59:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4331,7 +4194,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "r2cwoikvpr"
+          "Value": "i29z71jvad"
         },
         {
           "Name": "label",
@@ -4339,7 +4202,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zOfvFzK7eAZCVZKTsPHbVqO34m0RXNffprSOXS83mfs="
+          "Value": "sha256-IlMSWzb9QCYAORYf8PxRbtcacuUkjMO6VZ6Lak3EZwc="
+        }
+      ]
+    },
+    {
+      "Route": "js/Books.js",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-i29z71jvad.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000536480687"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1863"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IlMSWzb9QCYAORYf8PxRbtcacuUkjMO6VZ6Lak3EZwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 07:59:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE="
+        }
+      ]
+    },
+    {
+      "Route": "js/Books.js",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\Books.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7741"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 07:59:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qhN9x7/9JoooUCFkLB+6vHTyMrP2F6ndlgJMxHesHIE="
+        }
+      ]
+    },
+    {
+      "Route": "js/Books.js.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zzynp5wry7-i29z71jvad.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IlMSWzb9QCYAORYf8PxRbtcacuUkjMO6VZ6Lak3EZwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 07:59:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IlMSWzb9QCYAORYf8PxRbtcacuUkjMO6VZ6Lak3EZwc="
         }
       ]
     },
@@ -4642,13 +4642,13 @@
       ]
     },
     {
-      "Route": "js/transaction.27gznbgyt2.js",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-27gznbgyt2.gz",
+      "Route": "js/transaction.653vg32dp0.js",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-653vg32dp0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000452488688"
+          "Quality": "0.000516795866"
         }
       ],
       "ResponseHeaders": [
@@ -4658,15 +4658,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2209"
+          "Value": "1934"
         },
         {
           "Name": "ETag",
-          "Value": "\"LJb0ZpSOG3AWtwTbFZGUmDtlCMp5aTDIiiEgZEGzYEM=\""
+          "Value": "\"8yLxwuYXryX4d3TmLpRr037TgkVHY5Ok1Yeo3A3sha0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 20:09:50 GMT"
+          "Value": "Tue, 24 Dec 2024 02:51:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4686,13 +4686,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY=\""
+          "Value": "W/\"qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "27gznbgyt2"
+          "Value": "653vg32dp0"
         },
         {
           "Name": "label",
@@ -4700,12 +4700,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY="
+          "Value": "sha256-qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ="
         }
       ]
     },
     {
-      "Route": "js/transaction.27gznbgyt2.js",
+      "Route": "js/transaction.653vg32dp0.js",
       "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\transaction.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4715,7 +4715,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9202"
+          "Value": "7519"
         },
         {
           "Name": "Content-Type",
@@ -4723,11 +4723,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY=\""
+          "Value": "\"qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 20:09:50 GMT"
+          "Value": "Tue, 24 Dec 2024 02:51:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4737,7 +4737,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "27gznbgyt2"
+          "Value": "653vg32dp0"
         },
         {
           "Name": "label",
@@ -4745,13 +4745,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY="
+          "Value": "sha256-qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ="
         }
       ]
     },
     {
-      "Route": "js/transaction.27gznbgyt2.js.gz",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-27gznbgyt2.gz",
+      "Route": "js/transaction.653vg32dp0.js.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-653vg32dp0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4760,7 +4760,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2209"
+          "Value": "1934"
         },
         {
           "Name": "Content-Type",
@@ -4768,11 +4768,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LJb0ZpSOG3AWtwTbFZGUmDtlCMp5aTDIiiEgZEGzYEM=\""
+          "Value": "\"8yLxwuYXryX4d3TmLpRr037TgkVHY5Ok1Yeo3A3sha0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 20:09:50 GMT"
+          "Value": "Tue, 24 Dec 2024 02:51:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4790,7 +4790,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "27gznbgyt2"
+          "Value": "653vg32dp0"
         },
         {
           "Name": "label",
@@ -4798,18 +4798,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LJb0ZpSOG3AWtwTbFZGUmDtlCMp5aTDIiiEgZEGzYEM="
+          "Value": "sha256-8yLxwuYXryX4d3TmLpRr037TgkVHY5Ok1Yeo3A3sha0="
         }
       ]
     },
     {
       "Route": "js/transaction.js",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-27gznbgyt2.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-653vg32dp0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000452488688"
+          "Quality": "0.000516795866"
         }
       ],
       "ResponseHeaders": [
@@ -4819,15 +4819,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2209"
+          "Value": "1934"
         },
         {
           "Name": "ETag",
-          "Value": "\"LJb0ZpSOG3AWtwTbFZGUmDtlCMp5aTDIiiEgZEGzYEM=\""
+          "Value": "\"8yLxwuYXryX4d3TmLpRr037TgkVHY5Ok1Yeo3A3sha0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 20:09:50 GMT"
+          "Value": "Tue, 24 Dec 2024 02:51:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4847,13 +4847,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY=\""
+          "Value": "W/\"qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY="
+          "Value": "sha256-qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ="
         }
       ]
     },
@@ -4868,7 +4868,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9202"
+          "Value": "7519"
         },
         {
           "Name": "Content-Type",
@@ -4876,11 +4876,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY=\""
+          "Value": "\"qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 20:09:50 GMT"
+          "Value": "Tue, 24 Dec 2024 02:51:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4890,13 +4890,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QsDZ0+CAu5LphPdP0vquAoeD6npqIA5WIm/OyxhcgqY="
+          "Value": "sha256-qn3wkcNLdvAh5yMAHgIVCh/GhQ5C4QVfehaGb5EkhkQ="
         }
       ]
     },
     {
       "Route": "js/transaction.js.gz",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-27gznbgyt2.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\boqcmwvg81-653vg32dp0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4905,7 +4905,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2209"
+          "Value": "1934"
         },
         {
           "Name": "Content-Type",
@@ -4913,11 +4913,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LJb0ZpSOG3AWtwTbFZGUmDtlCMp5aTDIiiEgZEGzYEM=\""
+          "Value": "\"8yLxwuYXryX4d3TmLpRr037TgkVHY5Ok1Yeo3A3sha0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 20:09:50 GMT"
+          "Value": "Tue, 24 Dec 2024 02:51:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4935,7 +4935,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LJb0ZpSOG3AWtwTbFZGUmDtlCMp5aTDIiiEgZEGzYEM="
+          "Value": "sha256-8yLxwuYXryX4d3TmLpRr037TgkVHY5Ok1Yeo3A3sha0="
         }
       ]
     },
@@ -5238,13 +5238,13 @@
       ]
     },
     {
-      "Route": "js/UserManagement.4etz2ts3ep.js",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-4etz2ts3ep.gz",
+      "Route": "js/UserManagement.aw80ccekll.js",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-aw80ccekll.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000396982930"
+          "Quality": "0.000391389432"
         }
       ],
       "ResponseHeaders": [
@@ -5254,15 +5254,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2518"
+          "Value": "2554"
         },
         {
           "Name": "ETag",
-          "Value": "\"x6/MJB2HMYyGIzSWv52QF6vbkw4A823DL92F/1oK+so=\""
+          "Value": "\"X0mDJyR3P8m6O4Hv6CW6DIrG8Tx/48bNOsPUR4KFgN0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:26:41 GMT"
+          "Value": "Tue, 24 Dec 2024 07:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5282,13 +5282,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng=\""
+          "Value": "W/\"CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4etz2ts3ep"
+          "Value": "aw80ccekll"
         },
         {
           "Name": "label",
@@ -5296,12 +5296,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng="
+          "Value": "sha256-CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE="
         }
       ]
     },
     {
-      "Route": "js/UserManagement.4etz2ts3ep.js",
+      "Route": "js/UserManagement.aw80ccekll.js",
       "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\wwwroot\\js\\UserManagement.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5311,7 +5311,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11854"
+          "Value": "11998"
         },
         {
           "Name": "Content-Type",
@@ -5319,11 +5319,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng=\""
+          "Value": "\"CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:26:41 GMT"
+          "Value": "Tue, 24 Dec 2024 07:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5333,7 +5333,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4etz2ts3ep"
+          "Value": "aw80ccekll"
         },
         {
           "Name": "label",
@@ -5341,13 +5341,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng="
+          "Value": "sha256-CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE="
         }
       ]
     },
     {
-      "Route": "js/UserManagement.4etz2ts3ep.js.gz",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-4etz2ts3ep.gz",
+      "Route": "js/UserManagement.aw80ccekll.js.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-aw80ccekll.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5356,7 +5356,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2518"
+          "Value": "2554"
         },
         {
           "Name": "Content-Type",
@@ -5364,11 +5364,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x6/MJB2HMYyGIzSWv52QF6vbkw4A823DL92F/1oK+so=\""
+          "Value": "\"X0mDJyR3P8m6O4Hv6CW6DIrG8Tx/48bNOsPUR4KFgN0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:26:41 GMT"
+          "Value": "Tue, 24 Dec 2024 07:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5386,7 +5386,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "4etz2ts3ep"
+          "Value": "aw80ccekll"
         },
         {
           "Name": "label",
@@ -5394,18 +5394,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-x6/MJB2HMYyGIzSWv52QF6vbkw4A823DL92F/1oK+so="
+          "Value": "sha256-X0mDJyR3P8m6O4Hv6CW6DIrG8Tx/48bNOsPUR4KFgN0="
         }
       ]
     },
     {
       "Route": "js/UserManagement.js",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-4etz2ts3ep.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-aw80ccekll.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000396982930"
+          "Quality": "0.000391389432"
         }
       ],
       "ResponseHeaders": [
@@ -5415,15 +5415,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2518"
+          "Value": "2554"
         },
         {
           "Name": "ETag",
-          "Value": "\"x6/MJB2HMYyGIzSWv52QF6vbkw4A823DL92F/1oK+so=\""
+          "Value": "\"X0mDJyR3P8m6O4Hv6CW6DIrG8Tx/48bNOsPUR4KFgN0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:26:41 GMT"
+          "Value": "Tue, 24 Dec 2024 07:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5443,13 +5443,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng=\""
+          "Value": "W/\"CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng="
+          "Value": "sha256-CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE="
         }
       ]
     },
@@ -5464,7 +5464,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11854"
+          "Value": "11998"
         },
         {
           "Name": "Content-Type",
@@ -5472,11 +5472,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng=\""
+          "Value": "\"CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:26:41 GMT"
+          "Value": "Tue, 24 Dec 2024 07:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5486,13 +5486,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-dCrMA+gYg7/mHDNudckEIgveCV5O9pCbItxXtU9H+Ng="
+          "Value": "sha256-CkmcxOskJDIBnPZPVjF0FglufRopCpiQQy2FXT47WUE="
         }
       ]
     },
     {
       "Route": "js/UserManagement.js.gz",
-      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-4etz2ts3ep.gz",
+      "AssetFile": "H:\\CoSoDuLieuNangCao\\RedisApplication(2)\\RedisApplication\\RedisWebApplication\\obj\\Debug\\net9.0\\compressed\\zghq12z2ud-aw80ccekll.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5501,7 +5501,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2518"
+          "Value": "2554"
         },
         {
           "Name": "Content-Type",
@@ -5509,11 +5509,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"x6/MJB2HMYyGIzSWv52QF6vbkw4A823DL92F/1oK+so=\""
+          "Value": "\"X0mDJyR3P8m6O4Hv6CW6DIrG8Tx/48bNOsPUR4KFgN0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 18:26:41 GMT"
+          "Value": "Tue, 24 Dec 2024 07:01:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5531,7 +5531,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-x6/MJB2HMYyGIzSWv52QF6vbkw4A823DL92F/1oK+so="
+          "Value": "sha256-X0mDJyR3P8m6O4Hv6CW6DIrG8Tx/48bNOsPUR4KFgN0="
         }
       ]
     },

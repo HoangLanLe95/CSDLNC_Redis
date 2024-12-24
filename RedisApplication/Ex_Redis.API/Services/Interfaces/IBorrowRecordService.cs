@@ -11,5 +11,7 @@ namespace Ex_Redis.API.Services.Interfaces
 		Task<BorrowRecord> CreateAsync(BorrowRecord borrowRecord);
 		Task<BorrowRecord> UpdateAsync(BorrowRecord borrowRecord);
 		Task<bool> DeleteAsync(int id);
-	}
+		 
+
+    }
 }
